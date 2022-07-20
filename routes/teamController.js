@@ -35,8 +35,8 @@ router.delete('/:id', (req, res) => {
     const id = req.params.id;
     const newTeamList = teams.filter(team => team.id != id)
     teams = newTeamList;
-    
+
     res.status(200).json(teams);
-})
+});
 
 module.exports = router;
