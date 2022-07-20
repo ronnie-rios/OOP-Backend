@@ -1,12 +1,12 @@
 class FoneTeam {
-    constructor(id, brand, engine, championships) {
+    constructor(id, team, engine, championships) {
         this.id = id;
-        this.brand = brand;
+        this.team = team;
         this.engine = engine;
         this.championships = championships
     }
     teamIntro() {
-        return `${this.brand} uses the ${this.engine}`
+        return `${this.team} uses the ${this.engine}`
     }
 }
 

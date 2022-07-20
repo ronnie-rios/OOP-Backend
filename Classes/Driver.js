@@ -1,15 +1,14 @@
 const FoneTeam = require('./F1team')
 
 class Driver extends FoneTeam {
-    constructor(name, team, podiums)
-    super(id, brand, engine, championships) {
+    constructor(name, podiums) {
+    super(id, team, engine, championships) 
         this.name = name;
-        this.team = team
         this.podiums = podiums;
     }
-    teamIntro() {
-        return `${this.name} uses the ${this.engine}`
+    driver() {
+        return `${this.name} is on the ${this.team}`
     }
 }
 
-module.exports = FoneTeam;
+module.exports = Driver;
