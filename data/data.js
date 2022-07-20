@@ -5,7 +5,7 @@ const Driver = require('../Classes/Driver');
 const team1 = new FoneTeam(1, "Red Bull", "Honda Engine", 5)
 const team2 = new FoneTeam(2, "Mercedes", "Mercedes Engine", 13)
 const team3 = new FoneTeam(3, "Aston Martin", "Mercedes Engine", 0)
-const team4 = new FoneTeam(3, "Alpine", "Renault Engine", 11)
+const team4 = new FoneTeam(4, "Alpine", "Renault Engine", 11)
 
 const teams = [team1, team2, team3, team4]
 
@@ -16,6 +16,5 @@ const driver3 = new Driver(3, "Aston Martin", "Mercedes Engine", "4", "Vettel", 
 const driver4 = new Driver(4, "Alpine", "Renault Engine", "1", "Alonso", "98")
 
 const drivers = [driver1, driver2, driver3, driver4]
-console.log(teams)
-console.log(drivers)
+
 module.exports = { teams, drivers }
